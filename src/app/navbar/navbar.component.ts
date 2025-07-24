@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgClass],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   isDarkMode = false;
+  isMenuOpen = false;
+  isMobileView = false;
 
   ngOnInit() {
-    // Cargar preferencia guardada
+    this.checkScreenSize();
+    
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       this.setDarkMode(true);
@@ -21,18 +24,50 @@ export class NavbarComponent {
     }
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.checkScreenSize();
+  }
+
+  private checkScreenSize() {
+    this.isMobileView = window.innerWidth <= 768;
+    if (!this.isMobileView && this.isMenuOpen) {
+      this.closeMenu();
+    }
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    this.updateBodyScroll();
+  }
+
+  closeMenu() {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+      this.updateBodyScroll();
+    }
+  }
+
   toggleTheme() {
     this.setDarkMode(!this.isDarkMode);
     localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
   }
 
-  setDarkMode(isDark: boolean) {
+  private setDarkMode(isDark: boolean) {
     this.isDarkMode = isDark;
     const html = document.documentElement;
     if (isDark) {
       html.setAttribute('data-theme', 'dark');
     } else {
       html.removeAttribute('data-theme');
+    }
+  }
+
+  private updateBodyScroll() {
+    if (this.isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
     }
   }
 }
