@@ -21,11 +21,18 @@
       <li role="none"><a href="#services" role="menuitem" (click)="closeMenu()">{{ 'NAV.SERVICES' | translate }}</a></li>
       <li role="none"><a href="#contact" role="menuitem" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
       
-      <!-- Botón de tema en versión móvil -->
-      <li class="mobile-theme-toggle" role="none">
+      <!-- Controles de idioma y tema para móvil -->
+      <li class="mobile-controls" role="none">
+        <div class="language-switcher">
+          <button (click)="switchLanguage('es')" [class.active]="translate.currentLang === 'es'" title="Español">
+            <img src="/assets/icons/es.svg" alt="Bandera de España">
+          </button>
+          <button (click)="switchLanguage('en')" [class.active]="translate.currentLang === 'en'" title="English">
+            <img src="/assets/icons/en.svg" alt="UK Flag">
+          </button>
+        </div>
         <button class="theme-toggle" (click)="toggleTheme()" aria-label="Cambiar tema">
           <i class="fas" [class.fa-sun]="isDarkMode" [class.fa-moon]="!isDarkMode"></i>
-          <span>{{ (isDarkMode ? 'NAV.LIGHT_MODE' : 'NAV.DARK_MODE') | translate }}</span>
         </button>
       </li>
     </ul>
