@@ -309,10 +309,31 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Ajustar tamaño para mejor impacto */
+    line-height: 1.2;
+  }
+  .greeting,
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .typing-text {
+    font-size: 1.1rem;
+  }
+  .cta-button {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-md);
   }
   .code-window {
     padding: var(--space-2);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .typing-text {
+    font-size: 1rem;
   }
 }
 
