@@ -291,8 +291,11 @@
     justify-content: center;
   }
   .code-window {
-    max-width: 95vw;
+    max-width: 98vw;
     min-width: 0;
+    box-sizing: border-box;
+    overflow-x: auto;
+    word-break: break-word;
   }
   .scroll-indicator {
     bottom: var(--space-2);
@@ -310,4 +313,9 @@
   .code-window {
     padding: var(--space-2);
   }
+}
+
+.code-window .window-content {
+  overflow-x: auto;
+  word-break: break-word;
 }
