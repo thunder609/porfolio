@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Service {
   icon: string;
@@ -11,7 +12,7 @@ interface Service {
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
@@ -19,32 +20,32 @@ export class ServicesComponent {
   services: Service[] = [
     {
       icon: 'fa-solid fa-code',
-      title: 'Desarrollo Web',
-      description: 'Sitios web modernos, responsivos y optimizados para SEO con las últimas tecnologías',
+      title: 'SERVICES.WEB.TITLE',
+      description: 'SERVICES.WEB.DESCRIPTION',
       features: [
-        'Diseño responsivo',
-        'Optimización SEO',
-        'Integración de APIs'
+        'SERVICES.WEB.FEATURE_1',
+        'SERVICES.WEB.FEATURE_2',
+        'SERVICES.WEB.FEATURE_3'
       ]
     },
     {
       icon: 'fa-solid fa-mobile-screen',
-      title: 'Aplicaciones Móviles',
-      description: 'Apps nativas e híbridas para iOS y Android con experiencia de usuario excepcional',
+      title: 'SERVICES.MOBILE.TITLE',
+      description: 'SERVICES.MOBILE.DESCRIPTION',
       features: [
-        'React Native',
-        'Flutter',
-        'PWA'
+        'SERVICES.MOBILE.FEATURE_1',
+        'SERVICES.MOBILE.FEATURE_2',
+        'SERVICES.MOBILE.FEATURE_3'
       ]
     },
     {
       icon: 'fa-solid fa-database',
-      title: 'Backend & APIs',
-      description: 'Desarrollo de APIs robustas y escalables con arquitectura moderna y segura',
+      title: 'SERVICES.BACKEND.TITLE',
+      description: 'SERVICES.BACKEND.DESCRIPTION',
       features: [
-        'Java / Python',
-        'RESTful APIs',
-        'Microservicios'
+        'SERVICES.BACKEND.FEATURE_1',
+        'SERVICES.BACKEND.FEATURE_2',
+        'SERVICES.BACKEND.FEATURE_3'
       ]
     }
   ];

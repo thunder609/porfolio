@@ -202,10 +202,6 @@
     display: block;
 }
 
-.theme-switcher-desktop {
-    display: none;
-}
-
 /* Estilos para móvil */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -287,8 +283,8 @@
         text-align: center;
     }
 
-    .desktop-only {
-        display: none;
+    .nav-actions {
+        display: none; /* Ocultamos todas las acciones en móvil */
     }
 }
 

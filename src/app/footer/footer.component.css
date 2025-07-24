@@ -75,7 +75,7 @@
 }
 
 .footer-bottom p {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     font-size: var(--font-size-sm);
 }
 

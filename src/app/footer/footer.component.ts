@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface QuickLink {
   label: string;
@@ -15,22 +16,22 @@ interface SocialLink {
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
   quickLinks: QuickLink[] = [
-    { label: 'Inicio', href: '#home' },
-    { label: 'Proyectos', href: '#projects' },
-    { label: 'Servicios', href: '#services' },
-    { label: 'Contacto', href: '#contact' }
+    { label: 'FOOTER.LINKS.HOME', href: '#home' },
+    { label: 'FOOTER.LINKS.PROJECTS', href: '#projects' },
+    { label: 'FOOTER.LINKS.SERVICES', href: '#services' },
+    { label: 'FOOTER.LINKS.CONTACT', href: '#contact' }
   ];
 
   socialLinks: SocialLink[] = [
-    { icon: 'fab fa-github', label: 'GitHub', href: '#' },
-    { icon: 'fab fa-linkedin', label: 'LinkedIn', href: '#' },
-    { icon: 'fab fa-twitter', label: 'Twitter', href: '#' },
-    { icon: 'fab fa-whatsapp', label: 'WhatsApp', href: 'https://wa.me/5491112345678' }
+    { icon: 'fab fa-github', label: 'FOOTER.SOCIAL.GITHUB', href: 'https://github.com/Oswaldo-12' },
+    { icon: 'fab fa-linkedin', label: 'FOOTER.SOCIAL.LINKEDIN', href: 'https://www.linkedin.com/in/oswaldo-a-54135325b/' },
+    { icon: 'fab fa-twitter', label: 'FOOTER.SOCIAL.TWITTER', href: '#' },
+    { icon: 'fab fa-whatsapp', label: 'FOOTER.SOCIAL.WHATSAPP', href: 'https://wa.me/5491112345678' }
   ];
 }

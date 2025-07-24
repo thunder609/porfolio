@@ -8,6 +8,103 @@
     "LIGHT_MODE": "Modo Claro",
     "DARK_MODE": "Modo Oscuro"
   },
+  "ABOUT": {
+    "TITLE": "Sobre Mí",
+    "DESCRIPTION": "Soy un desarrollador apasionado por crear soluciones digitales que combinan funcionalidad excepcional con diseño atractivo. Con experiencia en tecnologías modernas, me especializo en construir aplicaciones web escalables y experiencias de usuario memorables.",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "STAT_PROJECTS": "Proyectos Completados",
+    "STAT_EXPERIENCE": "Años de Experiencia",
+    "STAT_CLIENTS": "Clientes Satisfechos"
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos Destacados",
+    "VIEW_PROJECT": "Ver Proyecto",
+    "VIEW_CODE": "Código",
+    "ECOMMERCE": {
+      "TITLE": "Plataforma E-commerce",
+      "DESCRIPTION": "Plataforma completa de comercio electrónico con carrito de compras, pagos y panel de administración."
+    },
+    "DASHBOARD": {
+      "TITLE": "Dashboard de Analíticas",
+      "DESCRIPTION": "Dashboard moderno con visualizaciones de datos en tiempo real y reportes interactivos."
+    }
+  },
+  "SERVICES": {
+    "TITLE": "Servicios",
+    "SUBTITLE": "Ofrezco soluciones digitales integrales para potenciar tu negocio: desarrollo web, apps móviles y APIs robustas.",
+    "WEB": {
+      "TITLE": "Desarrollo Web",
+      "DESCRIPTION": "Sitios web modernos, responsivos y optimizados para SEO con las últimas tecnologías.",
+      "FEATURE_1": "Diseño responsivo",
+      "FEATURE_2": "Optimización SEO",
+      "FEATURE_3": "Integración de APIs"
+    },
+    "MOBILE": {
+      "TITLE": "Aplicaciones Móviles",
+      "DESCRIPTION": "Apps nativas e híbridas para iOS y Android con experiencia de usuario excepcional.",
+      "FEATURE_1": "React Native",
+      "FEATURE_2": "Flutter",
+      "FEATURE_3": "PWA"
+    },
+    "BACKEND": {
+      "TITLE": "Backend & APIs",
+      "DESCRIPTION": "Desarrollo de APIs robustas y escalables con arquitectura moderna y segura.",
+      "FEATURE_1": "Java / Python",
+      "FEATURE_2": "RESTful APIs",
+      "FEATURE_3": "Microservicios"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "SUBTITLE": "¡Trabajemos juntos!",
+    "PITCH": "¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ayudarte a hacerlo realidad.",
+    "METHODS": {
+      "EMAIL": {
+        "LABEL": "Email"
+      },
+      "PHONE": {
+        "LABEL": "Teléfono"
+      },
+      "LOCATION": {
+        "LABEL": "Ubicación"
+      }
+    },
+    "FORM": {
+      "NAME": {
+        "LABEL": "Nombre",
+        "PLACEHOLDER": "Tu nombre"
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "PLACEHOLDER": "Tu email"
+      },
+      "MESSAGE": {
+        "LABEL": "Mensaje",
+        "PLACEHOLDER": "Tu mensaje"
+      },
+      "SUBMIT": "Enviar Mensaje"
+    }
+  },
+  "FOOTER": {
+    "NAME": "Oswaldo",
+    "DESCRIPTION": "Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales.",
+    "QUICK_LINKS_TITLE": "Enlaces Rápidos",
+    "FOLLOW_ME_TITLE": "Sígueme",
+    "COPYRIGHT": "© 2025 Oswaldo. Todos los derechos reservados.",
+    "LINKS": {
+      "HOME": "Inicio",
+      "PROJECTS": "Proyectos",
+      "SERVICES": "Servicios",
+      "CONTACT": "Contacto"
+    },
+    "SOCIAL": {
+      "GITHUB": "GitHub",
+      "LINKEDIN": "LinkedIn",
+      "TWITTER": "Twitter",
+      "WHATSAPP": "WhatsApp"
+    }
+  },
   "HERO": {
     "GREETING": "Hola, soy",
     "NAME": "Oswaldo",

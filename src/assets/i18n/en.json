@@ -8,6 +8,103 @@
     "LIGHT_MODE": "Light Mode",
     "DARK_MODE": "Dark Mode"
   },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "DESCRIPTION": "I am a developer passionate about creating digital solutions that combine exceptional functionality with attractive design. With experience in modern technologies, I specialize in building scalable web applications and memorable user experiences.",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "STAT_PROJECTS": "Projects Completed",
+    "STAT_EXPERIENCE": "Years of Experience",
+    "STAT_CLIENTS": "Satisfied Clients"
+  },
+  "PROJECTS": {
+    "TITLE": "Featured Projects",
+    "VIEW_PROJECT": "View Project",
+    "VIEW_CODE": "Code",
+    "ECOMMERCE": {
+      "TITLE": "E-commerce Platform",
+      "DESCRIPTION": "Complete e-commerce platform with shopping cart, payments, and administration panel."
+    },
+    "DASHBOARD": {
+      "TITLE": "Analytics Dashboard",
+      "DESCRIPTION": "Modern dashboard with real-time data visualizations and interactive reports."
+    }
+  },
+  "SERVICES": {
+    "TITLE": "Services",
+    "SUBTITLE": "I offer comprehensive digital solutions to boost your business: web development, mobile apps, and robust APIs.",
+    "WEB": {
+      "TITLE": "Web Development",
+      "DESCRIPTION": "Modern, responsive, and SEO-optimized websites with the latest technologies.",
+      "FEATURE_1": "Responsive Design",
+      "FEATURE_2": "SEO Optimization",
+      "FEATURE_3": "API Integration"
+    },
+    "MOBILE": {
+      "TITLE": "Mobile Apps",
+      "DESCRIPTION": "Native and hybrid apps for iOS and Android with an exceptional user experience.",
+      "FEATURE_1": "React Native",
+      "FEATURE_2": "Flutter",
+      "FEATURE_3": "PWA"
+    },
+    "BACKEND": {
+      "TITLE": "Backend & APIs",
+      "DESCRIPTION": "Development of robust and scalable APIs with modern and secure architecture.",
+      "FEATURE_1": "Java / Python",
+      "FEATURE_2": "RESTful APIs",
+      "FEATURE_3": "Microservices"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Let's work together!",
+    "PITCH": "Have a project in mind? I'd love to hear about it and help you bring it to life.",
+    "METHODS": {
+      "EMAIL": {
+        "LABEL": "Email"
+      },
+      "PHONE": {
+        "LABEL": "Phone"
+      },
+      "LOCATION": {
+        "LABEL": "Location"
+      }
+    },
+    "FORM": {
+      "NAME": {
+        "LABEL": "Name",
+        "PLACEHOLDER": "Your name"
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "PLACEHOLDER": "Your email"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "PLACEHOLDER": "Your message"
+      },
+      "SUBMIT": "Send Message"
+    }
+  },
+  "FOOTER": {
+    "NAME": "Oswaldo",
+    "DESCRIPTION": "Full Stack Developer passionate about creating exceptional digital experiences.",
+    "QUICK_LINKS_TITLE": "Quick Links",
+    "FOLLOW_ME_TITLE": "Follow Me",
+    "COPYRIGHT": "© 2025 Oswaldo. All rights reserved.",
+    "LINKS": {
+      "HOME": "Home",
+      "PROJECTS": "Projects",
+      "SERVICES": "Services",
+      "CONTACT": "Contact"
+    },
+    "SOCIAL": {
+      "GITHUB": "GitHub",
+      "LINKEDIN": "LinkedIn",
+      "TWITTER": "Twitter",
+      "WHATSAPP": "WhatsApp"
+    }
+  },
   "HERO": {
     "GREETING": "Hi, I'm",
     "NAME": "Oswaldo",
