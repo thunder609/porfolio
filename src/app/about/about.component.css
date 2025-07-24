@@ -100,3 +100,44 @@
     color: var(--text-secondary);
     font-weight: 500;
 }
+
+/* --- Responsive Styles --- */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+  .about-stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: var(--space-16) 0;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+  .skills-grid {
+    margin-left: 0;
+  }
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-10);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-stats {
+    flex-direction: column;
+  }
+  .stat-number {
+    font-size: var(--font-size-3xl);
+  }
+}
