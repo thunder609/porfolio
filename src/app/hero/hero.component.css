@@ -259,9 +259,10 @@
 /* --- Responsive styles for mobile --- */
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
-    padding: var(--space-8) 0;
+    min-height: auto; /* Permitir que la altura se ajuste al contenido */
+    padding: 100px 0 60px; /* Añadir espacio superior e inferior */
     display: block;
+    overflow: visible; /* Evitar que el contenido se corte */
   }
   .hero-content {
     grid-template-columns: 1fr;
