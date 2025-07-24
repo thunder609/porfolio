@@ -1,0 +1,18 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About Me",
+    "SERVICES": "Services",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "LIGHT_MODE": "Light Mode",
+    "DARK_MODE": "Dark Mode"
+  },
+  "HERO": {
+    "GREETING": "Hi, I'm",
+    "NAME": "Oswaldo",
+    "TITLE": "Full-Stack Developer",
+    "SUBTITLE": "Passionate about creating innovative and efficient web solutions. I turn ideas into clean, functional code.",
+    "CTA_BUTTON": "View Projects"
+  }
+}

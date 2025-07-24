@@ -15,26 +15,36 @@
     </button>
     
     <ul class="nav-links" [class.active]="isMenuOpen" role="menubar">
-      <li role="none"><a href="#home" role="menuitem" (click)="closeMenu()">Inicio</a></li>
-      <li role="none"><a href="#about" role="menuitem" (click)="closeMenu()">Sobre Mí</a></li>
-      <li role="none"><a href="#projects" role="menuitem" (click)="closeMenu()">Proyectos</a></li>
-      <li role="none"><a href="#services" role="menuitem" (click)="closeMenu()">Servicios</a></li>
-      <li role="none"><a href="#contact" role="menuitem" (click)="closeMenu()">Contacto</a></li>
+      <li role="none"><a href="#home" role="menuitem" (click)="closeMenu()">{{ 'NAV.HOME' | translate }}</a></li>
+      <li role="none"><a href="#about" role="menuitem" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a></li>
+      <li role="none"><a href="#projects" role="menuitem" (click)="closeMenu()">{{ 'NAV.PROJECTS' | translate }}</a></li>
+      <li role="none"><a href="#services" role="menuitem" (click)="closeMenu()">{{ 'NAV.SERVICES' | translate }}</a></li>
+      <li role="none"><a href="#contact" role="menuitem" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
       
       <!-- Botón de tema en versión móvil -->
       <li class="mobile-theme-toggle" role="none">
         <button class="theme-toggle" (click)="toggleTheme()" aria-label="Cambiar tema">
           <i class="fas" [class.fa-sun]="isDarkMode" [class.fa-moon]="!isDarkMode"></i>
-          <span>{{ isDarkMode ? 'Modo Claro' : 'Modo Oscuro' }}</span>
+          <span>{{ isDarkMode ? 'NAV.LIGHT_MODE' | translate : 'NAV.DARK_MODE' | translate }}</span>
         </button>
       </li>
     </ul>
     
-    <!-- Botón de tema en versión escritorio -->
-    <button class="theme-toggle desktop-only" (click)="toggleTheme()" aria-label="Cambiar tema">
-      <i class="fas" [class.fa-sun]="isDarkMode" [class.fa-moon]="!isDarkMode"></i>
-    </button>
-  </div>
+    <div class="nav-actions">
+      <div class="language-switcher">
+        <button (click)="switchLanguage('es')" [class.active]="translate.currentLang === 'es'" title="Español">
+          <img src="assets/icons/es.svg" alt="Bandera de España">
+        </button>
+        <button (click)="switchLanguage('en')" [class.active]="translate.currentLang === 'en'" title="English">
+          <img src="assets/icons/en.svg" alt="UK Flag">
+        </button>
+      </div>
+      <div class="theme-switcher-desktop">
+        <button (click)="toggleTheme()" [attr.aria-pressed]="isDarkMode" title="Cambiar tema">
+          <i class="fas" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
+        </button>
+      </div>
+    </div>
   
   <!-- Overlay para cerrar el menú al tocar fuera -->
   <div class="menu-overlay" 

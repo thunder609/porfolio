@@ -159,6 +159,53 @@
     display: none;
 }
 
+/* --- Contenedor de Acciones --- */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+/* --- Selector de Idioma --- */
+.language-switcher {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.language-switcher button {
+    background: none;
+    border: 2px solid transparent;
+    border-radius: var(--radius-full);
+    padding: var(--space-1);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    opacity: 0.6;
+}
+
+.language-switcher button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.language-switcher button.active {
+    border-color: var(--primary);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
+}
+
+.language-switcher img {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    display: block;
+}
+
+.theme-switcher-desktop {
+    display: none;
+}
+
 /* Estilos para móvil */
 @media (max-width: 768px) {
     .nav-toggle {

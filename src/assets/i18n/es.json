@@ -1,0 +1,18 @@
+{
+  "NAV": {
+    "HOME": "Inicio",
+    "ABOUT": "Sobre Mí",
+    "SERVICES": "Servicios",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto",
+    "LIGHT_MODE": "Modo Claro",
+    "DARK_MODE": "Modo Oscuro"
+  },
+  "HERO": {
+    "GREETING": "Hola, soy",
+    "NAME": "Oswaldo",
+    "TITLE": "Desarrollador Full-Stack",
+    "SUBTITLE": "Apasionado por crear soluciones web innovadoras y eficientes. Transformo ideas en código limpio y funcional.",
+    "CTA_BUTTON": "Ver Proyectos"
+  }
+}

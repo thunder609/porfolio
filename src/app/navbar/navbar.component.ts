@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,8 @@ export class NavbarComponent implements OnInit {
   isDarkMode = false;
   isMenuOpen = false;
   isMobileView = false;
+
+  constructor(public translate: TranslateService) {}
 
   ngOnInit() {
     this.checkScreenSize();
@@ -34,6 +37,11 @@ export class NavbarComponent implements OnInit {
     if (!this.isMobileView && this.isMenuOpen) {
       this.closeMenu();
     }
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 
   toggleMenu() {
