@@ -1,0 +1,38 @@
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>¡Trabajemos juntos!</h3>
+        <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ayudarte a hacerlo realidad.</p>
+        <div class="contact-methods">
+          <div class="contact-method" *ngFor="let method of contactMethods">
+            <i [class]="method.icon"></i>
+            <div>
+              <h4>{{ method.label }}</h4>
+              <p>{{ method.value }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form glass">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          <label for="name">Nombre</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Tu email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+          <label for="message">Mensaje</label>
+        </div>
+        <button type="submit" class="submit-button">
+          <span>Enviar Mensaje</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

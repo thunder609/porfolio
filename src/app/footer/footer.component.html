@@ -1,0 +1,27 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Tu Nombre</h3>
+        <p>Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li *ngFor="let link of quickLinks"><a [href]="link.href">{{ link.label }}</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Sígueme</h4>
+        <div class="social-links">
+          <a *ngFor="let social of socialLinks" [href]="social.href" class="social-link" [attr.aria-label]="social.label" target="_blank">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

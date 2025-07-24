@@ -1,0 +1,18 @@
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Servicios</h2>
+    <p style="text-align:center; margin-bottom:2rem; color:var(--text-secondary); font-size:1.1rem;">Ofrezco soluciones digitales integrales para potenciar tu negocio: desarrollo web, apps móviles y APIs robustas.</p>
+    <div class="services-grid">
+      <div class="service-card glass" *ngFor="let service of services; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+        <div class="service-icon">
+          <i [class]="service.icon"></i>
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <ul class="service-features">
+          <li *ngFor="let feature of service.features">{{ feature }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
