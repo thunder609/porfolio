@@ -157,6 +157,30 @@
     background-clip: text;
 }
 
+/* --- Responsive Styles --- */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: var(--space-16) 0;
+  }
+  .contact-info h3 {
+    font-size: var(--font-size-2xl);
+  }
+  .contact-info p {
+    font-size: var(--font-size-base);
+  }
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-10);
+  }
+}
+
 
 
 
